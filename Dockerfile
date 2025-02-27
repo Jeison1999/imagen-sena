@@ -20,6 +20,9 @@ COPY Gemfile Gemfile.lock ./
 
 RUN bundle install
 
+# Instalar Rails
+RUN gem install rails
+
 COPY . .
 
 EXPOSE 3000
