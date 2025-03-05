@@ -385,3 +385,183 @@ Started GET "/favicon.ico" for 181.48.150.43 at 2025-03-05 15:32:25 +0000
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/user/2.json" for 181.48.150.43 at 2025-03-05 16:29:20 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (424.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 846ms (Views: 37.6ms | ActiveRecord: 423.4ms (1 query, 0 cached) | GC: 478.3ms)
+
+
+Started GET "/user/1.json" for 181.48.150.43 at 2025-03-05 16:30:28 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 95ms (Views: 8.2ms | ActiveRecord: 9.7ms (1 query, 0 cached) | GC: 27.9ms)
+
+
+Started GET "/user/6.json" for 181.48.150.43 at 2025-03-05 16:30:43 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 404 Not Found in 21ms (Views: 3.9ms | ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 181.48.150.43 at 2025-03-05 16:30:46 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 12ms (Views: 1.1ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 172.17.0.1 at 2025-03-05 16:36:35 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (137.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 661ms (Views: 34.4ms | ActiveRecord: 136.1ms (1 query, 0 cached) | GC: 328.9ms)
+
+
+Started GET "/" for 179.1.218.16 at 2025-03-05 19:51:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 375ms (Views: 66.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 179.1.218.16 at 2025-03-05 19:51:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/user/1.json" for 179.1.218.16 at 2025-03-05 19:54:06 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 1033ms (Views: 24.3ms | ActiveRecord: 109.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 179.1.218.16 at 2025-03-05 19:54:08 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user/2.json" for 191.95.17.222 at 2025-03-05 19:57:18 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 142ms (Views: 6.2ms | ActiveRecord: 14.7ms (1 query, 0 cached) | GC: 75.9ms)
+
+
+Started GET "/user/4.json" for 191.95.17.222 at 2025-03-05 19:57:25 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 179.1.218.16 at 2025-03-05 19:57:43 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.2ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 20.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 179.1.218.16 at 2025-03-05 19:57:52 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 179.1.218.16 at 2025-03-05 19:59:16 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 12ms (Views: 1.3ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 179.1.218.16 at 2025-03-05 19:59:26 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 179.1.218.16 at 2025-03-05 19:59:33 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 179.1.218.16 at 2025-03-05 19:59:40 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 179.1.218.16 at 2025-03-05 19:59:48 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 34.4ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 191.95.17.222 at 2025-03-05 20:08:49 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (94.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 145ms (Views: 9.3ms | ActiveRecord: 94.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 191.95.17.222 at 2025-03-05 20:08:53 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 191.95.17.222 at 2025-03-05 20:20:35 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (77.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 145ms (Views: 11.2ms | ActiveRecord: 77.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 2803:1800:5006:c77e:9cac:47ff:fe46:43cc at 2025-03-05 20:26:50 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (160.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 199ms (Views: 2.1ms | ActiveRecord: 160.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/3.json" for 191.95.17.222 at 2025-03-05 20:27:10 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 63ms (Views: 49.0ms | ActiveRecord: 3.4ms (1 query, 0 cached) | GC: 45.1ms)
+
+
+Started GET "/user/2.json" for 191.95.17.222 at 2025-03-05 20:28:10 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 23ms (Views: 3.0ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
