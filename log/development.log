@@ -27,3 +27,361 @@ Migrating to CreateUsers (20250227215310)
   [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "sexo", "created_at", "updated_at") VALUES ('maria jose', 15, 'femenino', '2025-02-27 22:03:42.923482', '2025-02-27 22:03:42.923482') RETURNING "id" /*application='MiApi'*/[0m
   [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='MiApi'*/[0m
   [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+Started GET "/users/1.json" for 172.17.0.1 at 2025-02-27 22:09:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+ArgumentError ('User' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-02-27 22:09:14 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users.json" for 172.17.0.1 at 2025-02-27 22:09:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users.json"):
+  
+Started GET "/" for 172.17.0.1 at 2025-02-27 22:09:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 172.17.0.1 at 2025-02-27 22:17:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 267ms (Views: 32.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 172.17.0.1 at 2025-02-27 22:17:28 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/" for 172.17.0.1 at 2025-03-04 23:03:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.0ms | GC: 0.0ms)
+Completed 200 OK in 388ms (Views: 98.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 172.17.0.1 at 2025-03-04 23:03:03 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+  [1m[36mUser Load (147.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='MiApi'*/[0m
+Started GET "/" for 172.17.0.1 at 2025-03-04 23:21:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 377ms (Views: 95.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user.all" for 172.17.0.1 at 2025-03-04 23:21:39 +0000
+Processing by UserController#index as */*
+  [1m[36mUser Load (174.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 1226ms (Views: 173.5ms | ActiveRecord: 222.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-03-04 23:21:43 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user.all" for 172.17.0.1 at 2025-03-04 23:24:38 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+SyntaxError (/app/app/controllers/user_controller.rb:13: syntax error, unexpected end-of-input):
+  
+app/controllers/user_controller.rb:13: syntax error, unexpected end-of-input
+Started GET "/user.all" for 172.17.0.1 at 2025-03-04 23:26:01 +0000
+Processing by UserController#index as */*
+  [1m[36mUser Load (59.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 365ms (Views: 109.4ms | ActiveRecord: 72.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user.all/1" for 172.17.0.1 at 2025-03-04 23:26:10 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/user.all/1"):
+  
+Started GET "/user/1.json" for 172.17.0.1 at 2025-03-04 23:27:10 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 685ms (Views: 1.9ms | ActiveRecord: 128.6ms (1 query, 0 cached) | GC: 417.9ms)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 3f18-191-95-135-74.ngrok-free.app, 3f18-191-95-135-74.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 3f18-191-95-135-74.ngrok-free.app, 3f18-191-95-135-74.ngrok-free.app
+Started GET "/" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 00:55:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.7ms | GC: 0.0ms)
+Completed 200 OK in 249ms (Views: 38.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 00:55:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/user/1.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 00:56:05 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 1035ms (Views: 34.7ms | ActiveRecord: 108.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 00:56:07 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 00:56:16 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 2800:e2:917f:ee3b:b9c8:413c:bc26:2123 at 2025-03-05 00:56:31 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 3.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 2800:e2:917f:ee3b:b9c8:413c:bc26:2123 at 2025-03-05 00:56:52 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 36.7ms | ActiveRecord: 7.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 2800:e2:917f:ee3b:b9c8:413c:bc26:2123 at 2025-03-05 00:56:53 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user" for 2800:e2:917f:ee3b:b9c8:413c:bc26:2123 at 2025-03-05 00:56:59 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:00:42 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (32.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 220ms (Views: 23.0ms | ActiveRecord: 32.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user" for 2800:e2:917f:ee3b:b9c8:413c:bc26:2123 at 2025-03-05 01:11:47 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (368.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 634ms (Views: 224.7ms | ActiveRecord: 371.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:13:36 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (32.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 287ms (Views: 20.9ms | ActiveRecord: 32.4ms (1 query, 0 cached) | GC: 103.9ms)
+
+
+Started GET "/user/2.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:13:39 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 3.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 191.95.135.74 at 2025-03-05 01:30:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 345ms (Views: 9.0ms | ActiveRecord: 52.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:33:42 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (36.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 250ms (Views: 39.8ms | ActiveRecord: 37.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:33:43 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user/2.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 01:35:35 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (21.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 271ms (Views: 9.1ms | ActiveRecord: 21.3ms (1 query, 0 cached) | GC: 173.5ms)
+
+
+Started GET "/user/2.json" for 2800:e2:917f:ee3b:8936:a34a:52f9:4e8 at 2025-03-05 02:03:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 325ms (Views: 6.3ms | ActiveRecord: 53.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users.json" for 172.17.0.1 at 2025-03-05 04:42:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (9.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users.json"):
+  
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-03-05 04:42:11 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users.json" for 172.17.0.1 at 2025-03-05 04:42:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users.json"):
+  
+Started GET "/user.json" for 172.17.0.1 at 2025-03-05 04:44:05 +0000
+Processing by UserController#index as JSON
+  [1m[36mUser Load (144.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:4:in `index'
+Completed 200 OK in 870ms (Views: 234.9ms | ActiveRecord: 166.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 172.17.0.1 at 2025-03-05 04:44:21 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 69ms (Views: 0.8ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 181.48.150.43 at 2025-03-05 05:03:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.0ms | GC: 0.0ms)
+Completed 200 OK in 356ms (Views: 67.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 181.48.150.43 at 2025-03-05 05:03:10 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/user/1.json" for 181.48.150.43 at 2025-03-05 05:03:21 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 217ms (Views: 4.7ms | ActiveRecord: 42.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 181.48.150.43 at 2025-03-05 05:03:22 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 181.48.150.43 at 2025-03-05 05:08:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.1ms | GC: 0.0ms)
+Completed 200 OK in 93ms (Views: 63.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/1.json" for 181.48.150.43 at 2025-03-05 05:10:09 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (470.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 697ms (Views: 40.9ms | ActiveRecord: 470.4ms (1 query, 0 cached) | GC: 97.8ms)
+
+
+Started GET "/user/2.json" for 181.48.150.43 at 2025-03-05 05:19:54 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (479.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 997ms (Views: 66.5ms | ActiveRecord: 476.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 181.48.150.43 at 2025-03-05 05:21:58 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user/2.json" for 181.48.150.43 at 2025-03-05 05:22:07 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (21.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 73ms (Views: 14.5ms | ActiveRecord: 21.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-03-05 05:22:09 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user/1.json" for 172.17.0.1 at 2025-03-05 05:22:12 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/user/2.json" for 181.48.150.43 at 2025-03-05 05:27:28 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (301.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 433ms (Views: 29.8ms | ActiveRecord: 299.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-03-05 15:29:09 +0000
+Started GET "/user/1.json" for 172.17.0.1 at 2025-03-05 15:29:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 335ms (Views: 1.0ms | ActiveRecord: 41.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 181.48.150.43 at 2025-03-05 15:29:37 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 78ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 181.48.150.43 at 2025-03-05 15:29:37 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/user/1.json" for 181.48.150.43 at 2025-03-05 15:32:24 +0000
+Processing by UserController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='show',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:7:in `show'
+Completed 200 OK in 153ms (Views: 31.5ms | ActiveRecord: 20.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 181.48.150.43 at 2025-03-05 15:32:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
